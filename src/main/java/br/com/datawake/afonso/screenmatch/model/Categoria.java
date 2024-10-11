@@ -20,7 +20,7 @@ public enum Categoria {
                 return categoria;
             }
         }
-        throw new IllegalArgumentException("Nenhuma categoria encontrada para a sua busca fornecida: ");
+        throw new IllegalArgumentException("Nenhuma categoria encontrada para a sua busca fornecida: "  + text);
     }
     public static Categoria fromPortugues(String text){
         for(Categoria categoria : Categoria.values()) {
@@ -28,6 +28,6 @@ public enum Categoria {
                 return categoria;
             }
         }
-        throw new IllegalArgumentException("Nenhuma categoria encontrada para a sua busca fornecida: ");
+        throw new IllegalArgumentException("Nenhuma categoria encontrada para a sua busca fornecida: "  + text);
     }
 }

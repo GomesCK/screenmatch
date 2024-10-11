@@ -34,15 +34,15 @@ public class Serie {
     @Override
     public String toString() {
         return
-                "titulo='" + titulo + '\'' +
-                ", totalTemporadas=" + totalTemporadas +
-                ", avaliacao=" + avaliacao +
-                ", genero=" + genero +
-                ", atores='" + atores + '\'' +
-                ", poster='" + poster +
-//              + '\'' + ", sinopse='" + sinopse + '\'';
-                ", episodios='" + episodios;
-    }
+                "genero=" + genero +
+                        ", titulo='" + titulo + '\'' +
+                        ", totalTemporadas=" + totalTemporadas +
+                        ", avaliacao=" + avaliacao +
+                        ", atores='" + atores + '\'' +
+                        ", poster='" + poster + '\'' +
+//                            ", sinopse='" + sinopse + '\'' +
+                        ", episodios='" + episodios + '\'';
+        }
 
     public Serie(DadosSerie dadosSerie){
         this.titulo = dadosSerie.titulo();
